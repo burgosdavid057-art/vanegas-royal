@@ -1,0 +1,28 @@
+# Base de datos SQLite (generada por seed)
+/data/*.sqlite
+/data/*.sqlite-journal
+/data/*.sqlite-wal
+/data/*.sqlite-shm
+
+# Imágenes subidas desde el admin (las demo p*.jpg sí se versionan)
+/assets/img/productos/*
+!/assets/img/productos/.gitkeep
+!/assets/img/productos/p*.jpg
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# --- seguridad (agregado al publicar) ---
+CLAUDE.md
+.claude/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+node_modules/
+Thumbs.db
+.DS_Store
